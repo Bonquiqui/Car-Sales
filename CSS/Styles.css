@@ -1,0 +1,154 @@
+@font-face {
+    font-family:Quicksand;
+    src: url('Quicksand-Regular.ttf') format('truetype'),
+         url('Quicksand-Regular.woff') format('woff');
+}
+
+body {
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    background-color: #fffffe;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hero-image {
+    overflow: hidden;
+    max-height: 500px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    animation: bgburnsEast 25s linear infinite alternate;
+    -webkit-animation: bgburnsEast 25s linear infinite alternate;
+}
+
+nav {
+    display: flex;
+    border-bottom: 1px #fad13c solid;
+    font-size: 1.18rem;
+    align-items: center;
+    height: 5rem;
+    background-color: #2c2c2c;
+    color: #fad13c;
+}
+
+nav a.menu {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+}
+
+nav a.menu:hover, nav a.active {
+    color: #fad13c;
+    background: #444444;
+}
+
+nav .logo {
+    margin-right: auto;
+    font-family: fantasy;
+    font-size: 2rem;
+    padding: 0 1.75rem;
+    text-decoration: none;
+    color: #fad13c;
+}
+
+nav .logo span {
+    color: #ffffff;
+}
+
+article i.important-word {
+    color: #fad13c;
+    font-style: normal;
+}
+
+article > p {
+    text-align: center;
+    margin: 30px 171px;
+    color: #6f6e6e;
+}
+
+article > h1 {
+    text-align: center;
+    font-size: 3.25rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    box-shadow: 0 0 8px 2px #eee;
+    margin: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px 2px #aaa;
+}
+
+.card-text {
+    padding: 0 1.0rem;
+}
+
+.card-text p.title {
+    text-transform: Uppercase;
+}
+
+.card-text ul {
+    list-style: none;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.card-description {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12pt;
+    width: 243px;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.card-description i {
+    color:#fad13c;
+    margin-right: 2px;
+}
+
+.card-description div {
+    flex: 1 1 121px;
+}
+
+.card hr {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+@keyframes bgburnsEast {
+    from {
+        transform: scale(1.25) translateX(0);
+        -webkit-transform: scale(1.25) translateX(0)
+    }
+    to {
+        transform: scale(1.15) translateX(50px);
+        -webkit-transform: scale(1.15) translateX(50px)
+    }
+}

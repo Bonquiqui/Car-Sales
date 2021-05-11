@@ -1,0 +1,76 @@
+
+img.location {
+    width: 90%;
+    padding-left: 18px;
+}
+
+a.phone_number {
+    color: #fad13c;
+    text-decoration: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: #fad13c;
+}
+
+li > a:hover {
+    background-color: #444444;
+}
+
+a.phone_number:hover {
+    background-color: #444444;
+}
+
+dl.columnreviews {
+    padding-left: 16px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.row {
+    clear: both;
+ }
+ 
+ div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+ }
+ 
+ 
+ 
+ div[class^="col-"] {
+    float: left;
+ }
+ 
+ div.col-1-1 { 
+    width: 100%;
+ }
+ 
+ div.col-1-2 {
+    width: 50%;
+ }
+ 
+ div.col-1-3 {
+    width:33.33%;
+ }
+ 
+ div.col-2-3 {
+    width: 66.67%;
+ }
+ 
+ div.col-1-4 {
+    width: 25%;
+ }
+ 
+ div.col-3-4 {
+    width: 75%;
+ }
+ 
+ .reviews {
+    background-color: gray; 
+    outline: 1px solid black;
+ }
